@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Navbar from "./components/common/Navbar";
 import Gallery from "./components/gallery/Gallery";
 import Destination from "./components/Destination/Home";
+import SinglePages from "./SinglePage/SinglePages";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/destination" element={<Destination />} />
+        <Route path="/singlepage/:id" element={<SinglePages />} />
       </Routes>
     </BrowserRouter>
   );

@@ -6,6 +6,9 @@
     transition: 0.5s;
     width: 190%;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
 }
 
 .gallery .items {
@@ -102,10 +105,14 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+
 .popup-content {
     position: absolute;
     top: 15%;
-    left: 20%;
+    left: 30%;
+    right: 30%;
+    display: flex;
+
 }
 
 .popup button {
@@ -149,4 +156,12 @@
         right: 6.5%;
         font-weight: bold;
     }
+}
+
+.popup-content img {
+    transition: 0.5s;
+    height: 60vh;
+    width: 45vw;
+    object-fit: cover;
+    display: flex;
 }

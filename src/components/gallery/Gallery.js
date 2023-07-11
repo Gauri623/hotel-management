@@ -5,6 +5,7 @@ import GalleryData from "./GalleryData"
 import HeadTitle from "../common/HeadTitle/HeadTitle"
 
 const Gallery = () => {
+
     return (
         <>
             <HeadTitle />
@@ -21,3 +22,5 @@ const Gallery = () => {
 }
 
 export default Gallery
+
+

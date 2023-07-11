@@ -22,7 +22,7 @@ const Cards = (props) => {
                 <div className='popup'>
                     <div className='hide'></div>
                     <div className='popup-content'>
-                        <button onClick={toggleModal}>Close</button>
+                        <button onClick={toggleModal}>x</button>
                         <img src={props.imgaes} alt='Gallery Image' />
                     </div>
                 </div>

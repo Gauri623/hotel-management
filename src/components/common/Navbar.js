@@ -33,7 +33,6 @@ const Navbar = () => {
                     <ul className={click ? "nav-menu active" : 'nav-menu'}>
                         {linkData.map((item, index) => {
                             const { name, link } = item
-                            console.log(`'${link}'`);
                             return <li key={index}>
                                 <Link to={`${link}`} onClick={closeMobileMenu}>{name}</Link>
                             </li>
@@ -70,7 +69,6 @@ const Navbar = () => {
 
                     {navigateData.map((item, index) => {
                         const { name, value, icon } = item
-                        console.log(icon);
                         return <div key={index} className="contact flex_space">
                             <div className="box flex_space"></div>
                             <div className='icons'>
