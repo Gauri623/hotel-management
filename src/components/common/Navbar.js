@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const linkData = [
     { index: 0, name: "home", link: "/" },
@@ -20,6 +21,13 @@ const navigateData = [
 ]
 const Navbar = () => {
     const [click, setClick] = useState(false);
+    const [activePage, setActivePage] = useState("");
+    const location = useLocation()
+
+    useEffect(() => {
+        const pathname = location.pathname.split("/");
+        setActivePage(pathname[1] || "")
+    }, [location])
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(!false);
@@ -33,12 +41,12 @@ const Navbar = () => {
                     <ul className={click ? "nav-menu active" : 'nav-menu'}>
                         {linkData.map((item, index) => {
                             const { name, link } = item
-                            return <li key={index}>
-                                <Link to={`${link}`} onClick={closeMobileMenu}>{name}</Link>
+                            console.log(name, activePage, name === activePage);
+                            return <li key={index} >
+                                <Link className={`${name === activePage || (name === "home" && activePage === "") ? "navbar-item active" : "navbar-item"}`} to={`${link}`} onClick={closeMobileMenu}>{name}</Link>
                             </li>
                         })}
                     </ul >
-
                     <div className='login-area flex'>
                         <li>
                             <Link href='/sign-in'>
@@ -56,8 +64,6 @@ const Navbar = () => {
                             </button>
                         </li>
                     </div>
-
-
                 </div >
             </nav >
 

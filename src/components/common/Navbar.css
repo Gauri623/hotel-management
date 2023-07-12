@@ -40,6 +40,8 @@ nav ul li a:hover {
     color: #31b675;
 }
 
+
+
 .nav-links-mobile {
     display: none;
 }
@@ -209,4 +211,8 @@ header h4 {
         margin-right: 5px;
         margin-top: 10px;
     }
+}
+
+a.navbar-item.active {
+    color: #31b675;
 }

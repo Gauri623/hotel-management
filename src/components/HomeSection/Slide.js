@@ -30,7 +30,6 @@ const Slide = ({ slides }) => {
 
 
                 {slides.map((slide, index) => {
-                    console.log(slide);
                     const { images } = slide
                     return (
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
@@ -55,10 +54,10 @@ const Slide = ({ slides }) => {
                             <input type='date' placeholder='Check Out' />
                         </div>
                         <div className='flex_space'>
-                            <input type='number' placeholder='Adult(s)(+18)' />
-                            <input type='number' placeholder='Children(0 - 17)' min='0' maz='17' required />
+                            <input type='number' placeholder='Adult(s)(+18)' min='0' max='17' required />
+                            <input type='number' placeholder='Children(0 - 17)' min='0' max='17' required />
                         </div>
-                        <input type='number' placeholder='Rooms' />
+                        <input type='number' placeholder='Rooms' min='0' max='17' required />
                         <input type='submit' value='Search' className='submit' />
 
                     </form>

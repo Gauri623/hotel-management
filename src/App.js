@@ -6,6 +6,7 @@ import Navbar from "./components/common/Navbar";
 import Gallery from "./components/gallery/Gallery";
 import Destination from "./components/Destination/Home";
 import SinglePages from "./SinglePage/SinglePages";
+import Blogs from "./components/Blog/Blog";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/destination" element={<Destination />} />
-        <Route path="/singlepage/:id" element={<SinglePages />} />
+        <Route path="/destination/:id" element={<SinglePages />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
     </BrowserRouter>
   );

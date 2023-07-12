@@ -9,7 +9,7 @@ const Cards = ({ item: { id, image, title, sidepara, desc, paraImage_one, paraIm
                 <div className='img'>
                     <img src={image} alt='Gallery Image' />
 
-                    <Link to={`/singlepage/${id}`} className='blogItem-link'>
+                    <Link to={`/destination/${id}`} className='blogItem-link'>
                         <i className='fas fa-external-link-alt'></i>
                     </Link>
                 </div>

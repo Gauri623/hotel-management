@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import "./Singlepage.css"
 import HeadTitle from '../components/common/HeadTitle/HeadTitle'
 import { Link } from "react-router-dom"
 import { useParams } from 'react-router-dom'
@@ -25,15 +24,14 @@ const SinglePages = () => {
             {item ? (
                 <section className='single-page top'>
                     <div className='container'>
-                        <Link to='/destination' className='primary-btn back'>
+                        <Link to='/blog' className='primary-btn back'>
                             <i className='fas fa-long-arrow-alt-left'></i> Go Back
                         </Link>
 
                         <article className='content flex'>
                             <div className='main-content'>
-                                {item ? <img src={item.image} alt='' /> : <h2>Not found</h2>}
-                                <p>{item.desc}</p>
-                                <p>{item.sidepara}</p>
+                                {item ? <img src={item.cover} alt='' /> : <h2>Not found</h2>}
+
                             </div>
                             <h1>What is the {item.title} City? </h1>
                             <p> {item.desc} </p>
