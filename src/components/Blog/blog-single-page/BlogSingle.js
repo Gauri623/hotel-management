@@ -35,7 +35,7 @@ function BlogSingle() {
                                 <img src={item.cover} alt='' />
                                 <div className='category flex_space'>
                                     <span>{item.date}</span>
-                                    <label>{item.category}</label>
+
                                 </div>
                             </div>
                             <div className='head'>
@@ -48,12 +48,12 @@ function BlogSingle() {
                             <div className='side-content'>
                                 <div className='category-list'>
                                     <h2>Category</h2>
-                                    <hr />
+
                                     <ul>
                                         {BlogData.map((item, index) => {
                                             return (
                                                 <li key={index}>
-                                                    <i i className='far-play-circle' ></i>
+                                                    <i className='far-play-circle' ></i>
                                                     {item.catgeory}
                                                 </li>
                                             )

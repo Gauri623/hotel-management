@@ -15,7 +15,7 @@
   width: 43%;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -23,35 +23,35 @@
   z-index: 2;
 }
 
-.testimonialCard>.image-data {
+.testimonialCard > .image-data {
   display: flex;
   gap: 20px;
 }
-.testimonialCard>#test {
+.testimonialCard > #test {
   background-color: #000;
   height: 2px;
-  opacity: .2;
+  opacity: 0.2;
 }
 
-.testimonialCard>.image-data>img {
+.testimonialCard > .image-data > img {
   height: 100px;
   width: 100px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.testimonialCard>.image-data>.text-data {
+.testimonialCard > .image-data > .text-data {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.testimonialCard>.image-data>.text-data>h2 {
+.testimonialCard > .image-data > .text-data > h2 {
   font-weight: 500;
   letter-spacing: 1px;
 }
 
-.testimonialCard>.image-data>.text-data>.designation {
+.testimonialCard > .image-data > .text-data > .designation {
   font-size: 13px;
   font-weight: 400;
 }
@@ -68,11 +68,25 @@
   z-index: -1;
 }
 
-.testimonialCard>.description-data {
+.testimonialCard > .description-data {
   font-size: 13px;
   font-style: italic;
   font-weight: 400;
   line-height: 24px;
-  opacity: .5;
+  opacity: 0.5;
   text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .data-wrapper {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

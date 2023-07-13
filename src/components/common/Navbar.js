@@ -11,7 +11,7 @@ const linkData = [
     { index: 4, name: "blogs", link: "/blogs" },
     { index: 5, name: "testimonial", link: "/testimonial" },
     { index: 6, name: "contact", link: "/contact" },
-    { index: 8, name: "image", link: "/image" },
+
 ]
 
 const navigateData = [

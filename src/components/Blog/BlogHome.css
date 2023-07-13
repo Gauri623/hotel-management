@@ -110,10 +110,9 @@
   color: #31b675;
   margin-right: 20px;
 }
-.category-list h2 {
+.category-list .category-list h2 {
   display: flex;
-  position: relative;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .main-content {
@@ -126,6 +125,7 @@
 }
 .head p {
   margin-top: 600px;
+  margin-right: 20px;
 }
 .head h1 {
   display: flex;
