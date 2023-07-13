@@ -21,7 +21,7 @@ const HeadTitle = () => {
         <>
             <section className='image-heading'>
                 <div className='container'>
-                    {!pathname[2] ? <h1>{location.pathname.split("/")[1]}</h1> : <h1>{countryName}</h1>}
+                    {!countryName ? <h1>{location.pathname.split("/")[1]}</h1> : <h1>{countryName}</h1>}
                     <button className='button-wrapper'>
                         <Link to="/">Home / </Link>
                         <Link to={`/${pathname[1]}`}>
@@ -30,15 +30,12 @@ const HeadTitle = () => {
 
                         {pathname[2] && <>
                             <Link to="/"> / {AllItem.title}</Link>
-                            <span>{countryName.replace(" ", "")}</span>
+                            {countryName && <span>{countryName?.replace(" ", "")}</span>}
                         </>
                         }
                     </button>
                 </div>
             </section>
-
-
-
         </>
     )
 }

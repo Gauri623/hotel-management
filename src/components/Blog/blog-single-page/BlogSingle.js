@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react'
-import HeadTitle from '../components/common/HeadTitle/HeadTitle'
-import { Link } from "react-router-dom"
-import { useParams } from 'react-router-dom'
-import Sdata from '../components/Destination/Sdata'
-import EmptyFile from '../components/common/EmptyFile/EmptyFile'
+import React from 'react'
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import Sdata from '../../Destination/Sdata'
+import HeadTitle from "../../common/HeadTitle/HeadTitle";
+import EmptyFile from "../../common/EmptyFile/EmptyFile"
+import BlogData from '../BlogData'
 
-const SinglePages = () => {
+function BlogSingle() {
     const { id } = useParams()
     const [item, setItem] = useState(null);
     const [buttonClick, setButtonClick] = useState(false)
 
     useEffect(() => {
-        let item = Sdata.find((item) => item.id === +(id))
+        let item = BlogData.find((item) => item.id === +(id))
         if (item) {
             setItem(item)
         } else {
@@ -19,7 +21,7 @@ const SinglePages = () => {
         }
     }, [id])
     return (
-        <>
+        <div>
             <HeadTitle />
             {item ? (
                 <section className='single-page top'>
@@ -30,42 +32,45 @@ const SinglePages = () => {
 
                         <article className='content flex'>
                             <div className='main-content'>
-                                {item ? <img src={item.cover} alt='' /> : <h2>Not found</h2>}
-
+                                <img src={item.cover} alt='' />
+                                <div className='category flex_space'>
+                                    <span>{item.date}</span>
+                                    <label>{item.category}</label>
+                                </div>
                             </div>
-                            <h1>What is the {item.title} City? </h1>
-                            <p> {item.desc} </p>
-
-                            <div className='image grid1'>
-                                <img src={item.paraImage_one} alt="" />
-                                <img src={item.paraImage_two} alt="" />
+                            <div className='head'>
+                                <h1>{item.title}</h1>
+                                <p>{item.desc}</p>
+                                <p>{item.desc}</p>
                             </div>
-                            <p> {item.desc} </p>
 
 
                             <div className='side-content'>
-                                <div className='box'>
-                                    <h2>How can we help you?</h2>
-                                    <p>{item.sidepara}</p>
-                                    <button className='outline-btn'>
-                                        <i className='fa fa-phone-alt'></i>
-                                        Contact Us
-                                    </button>
-                                </div>
-
-                                <div className='box2'>
-                                    <p>{item.sidepara}</p>
-
+                                <div className='category-list'>
+                                    <h2>Category</h2>
+                                    <hr />
+                                    <ul>
+                                        {BlogData.map((item, index) => {
+                                            return (
+                                                <li key={index}>
+                                                    <i i className='far-play-circle' ></i>
+                                                    {item.catgeory}
+                                                </li>
+                                            )
+                                        })
+                                        }
+                                    </ul>
                                 </div>
                             </div>
-                        </article>
-                    </div>
-                </section>
+                        </article >
+                    </div >
+                </section >
             ) : (
                 <EmptyFile />
-            )}
-        </>
+            )
+            }
+        </div >
     )
 }
 
-export default SinglePages
+export default BlogSingle

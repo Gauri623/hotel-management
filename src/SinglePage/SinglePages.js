@@ -32,18 +32,17 @@ const SinglePages = () => {
                         <article className='content flex'>
                             <div className='main-content'>
                                 {item ? <img src={item.image} alt='' /> : <h2>Not found</h2>}
-                                <p>{item.desc}</p>
-                                <p>{item.sidepara}</p>
-                            </div>
-                            <h1>What is the {item.title} City? </h1>
-                            <p> {item.desc} </p>
+                                <h1>What is the {item.title} City? </h1>
+                                <div className='description-wrapper'>
+                                    <div className='leftpara'>
+                                        <p>{item.desc}</p>
+                                    </div>
 
-                            <div className='image grid1'>
-                                <img src={item.paraImage_one} alt="" />
-                                <img src={item.paraImage_two} alt="" />
+                                    <div className='rightpara'>
+                                        <p>{item.desc}</p>
+                                    </div>
+                                </div>
                             </div>
-                            <p> {item.desc} </p>
-
 
                             <div className='side-content'>
                                 <div className='box'>
@@ -57,7 +56,6 @@ const SinglePages = () => {
 
                                 <div className='box2'>
                                     <p>{item.sidepara}</p>
-
                                 </div>
                             </div>
                         </article>

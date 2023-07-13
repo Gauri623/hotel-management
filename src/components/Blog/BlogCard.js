@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 
 const BlogCard = ({ item: { id, date, catgeory, title, cover, para, desc } }) => {
+    console.log(id, "ID");
     return (
         <>
             <div className='items'>
@@ -18,7 +19,7 @@ const BlogCard = ({ item: { id, date, catgeory, title, cover, para, desc } }) =>
 
                 </div>
 
-                <Link to={'/blogsingle/${id}'} className='blogItem-link'>
+                <Link to={`/blogsingle/${id}`} className='blogItem-link'>
                     READ MORE <i className='fa fa-long-arrow-alt-right'></i>
                 </Link>
             </div>

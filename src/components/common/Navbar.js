@@ -9,14 +9,14 @@ const linkData = [
     { index: 2, name: "gallery", link: "/gallery" },
     { index: 3, name: "destination", link: "/destination" },
     { index: 4, name: "blogs", link: "/blogs" },
-    { index: 5, name: "testimonail", link: "/testimonail" },
+    { index: 5, name: "testimonial", link: "/testimonial" },
     { index: 6, name: "contact", link: "/contact" },
     { index: 8, name: "image", link: "/image" },
 ]
 
 const navigateData = [
     { index: 0, name: "Working Hours", value: "Monday - Sunday: 9.00am to 6.00pm", icon: "far fa-clock" },
-    { index: 1, name: "Call Us Hours", value: "+011 123 4567", icon: "fa-solid fa-phone-volume" },
+    { index: 1, name: "Call Us", value: "+011 123 4567", icon: "fa-solid fa-phone-volume" },
     { index: 2, name: "Mail Us", value: "info@example.com", icon: "fa-regular fa-envelope" },
 ]
 const Navbar = () => {

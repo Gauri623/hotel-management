@@ -12,14 +12,12 @@ const AllBlog = () => {
             <section className='blog top'>
                 <div className='container'>
                     <div className='content grid'>
-                        {items.map((item) => {
-                            return <BlogCard key={item.id} item={item} />
+                        {items.map((item, index) => {
+                            return <BlogCard key={index} item={item} />
                         })}
-
                     </div>
                 </div>
             </section>
-
         </>
     )
 }
