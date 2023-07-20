@@ -11,12 +11,11 @@ const BlogCard = ({ item: { id, date, catgeory, title, cover, para, desc } }) =>
                 </div>
                 <div className='catgeory flex_space'>
                     <span>{date}</span>
-                    <label>{catgeory}</label>
+                    <label className='color'>{catgeory}</label>
                 </div>
 
                 <div className='details'>
                     <h3>{title}</h3>
-
                 </div>
 
                 <Link to={`/blogsingle/${id}`} className='blogItem-link'>

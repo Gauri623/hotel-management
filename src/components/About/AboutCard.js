@@ -5,7 +5,7 @@ const AboutCard = () => {
         <>
             <div className='aboutCard mtop flex_space'>
                 <div className='row row1'>
-                    <h4>About Us</h4>
+                    <h4 className='About-Us'>About Us</h4>
                     <h1>
                         We <span>provide Solution</span> to grow your business
                     </h1>
@@ -20,15 +20,12 @@ const AboutCard = () => {
                         Explore More
                     </button>
                 </div>
-                <div className='row image'>
-                    <img src='/images/handshake.jpg' alt='' />
-                    <div className='control-btn'>
-                        <button className='prev'>
-                            <i className='fas fa-play'></i>
-                        </button>
-                    </div>
+                <div className='shakehand'>
+                    <img className='live' src='/images/handshake.jpg' alt='' />
+
                 </div>
             </div>
+
         </>
     )
 }

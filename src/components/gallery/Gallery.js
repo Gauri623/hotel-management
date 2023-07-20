@@ -3,6 +3,7 @@ import Cards from "./Card"
 import "./Gallery.css"
 import GalleryData from "./GalleryData"
 import HeadTitle from "../common/HeadTitle/HeadTitle"
+import Footer from "../Footer/Footer"
 
 const Gallery = () => {
 
@@ -17,6 +18,7 @@ const Gallery = () => {
                     })}
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import "./About.css"
 import AboutCard from './AboutCard'
 import HeadTitle from '../common/HeadTitle/HeadTitle'
+import Footer from '../Footer/Footer'
 
 function About() {
     return (
@@ -12,6 +13,7 @@ function About() {
                     <AboutCard />
                 </div>
             </section>
+            <Footer />
 
 
         </>

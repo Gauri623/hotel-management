@@ -1,218 +1,241 @@
+.hoteldiv {
+  display: flex;
+}
 .navbar {
-    background-color: #222222;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    height: 10vh;
-    line-height: 10vh;
-    gap: 10%
+  background-color: #222222;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 10vh;
+  line-height: 10vh;
+  gap: 10%;
 }
 
 nav ul li {
-    display: inline-block;
-    transition: all 0.5s ease-out;
-    display: flex;
-    gap: 15px;
+  display: inline-block;
+  transition: all 0.5s ease-out;
+  display: flex;
+  gap: 15px;
 }
 
 nav ul li a {
-    color: white;
-    font-weight: 100;
-    font-size: 15px;
-    letter-spacing: 1px;
-    transition: all 0.5s ease-in-out;
-    opacity: 0.8;
-    list-style: none;
-    text-decoration: none;
-    text-transform: capitalize;
+  color: white;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 ul {
-    display: flex;
-    gap: 3%;
+  display: flex;
+  gap: 3%;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav ul li a:hover {
-    color: #31b675;
+  color: #31b675;
 }
-
-
 
 .nav-links-mobile {
-    display: none;
+  display: none;
 }
 
-.login-area.flex {
-    height: 100%;
+.loginarea {
+  height: 100%;
+  display: flex;
 }
 
 button {
-    background-color: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  background-color: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .primary-btn {
-    padding: 10px 20px;
-    background-color: #31b675;
-    color: #fff;
-    font-weight: 400;
+  padding: 10px 20px;
+  background-color: #31b675;
+  color: #fff;
+  font-weight: 400;
 }
 
 .primary-btn:hover {
-    background-color: lightgreen;
-    color: white;
+  background-color: lightgreen;
+  color: white;
 }
 
 .menu-icon {
-    display: none;
+  display: none;
 }
 
 nav i {
-    color: #fff;
+  color: #fff;
 }
 
 .login-area a {
-    font-weight: 300;
-    opacity: 0.8;
-    font-size: 15px;
-    color: #fff;
+  font-weight: 300;
+  opacity: 0.8;
+  font-size: 15px;
+  color: #fff;
 }
 
 .login-area i {
-    margin: 0 5px 0 15px;
-    font-size: 13px;
-    color: #fff;
+  margin: 0 5px 0 15px;
+  font-size: 13px;
+  color: #fff;
 }
 
 .login-area button {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
-    .login-area {
-        position: absolute;
-        right: 20;
-        ;
-    }
+  .login-area {
+    position: absolute;
+    right: 20;
+  }
 
-    .navbar {
-        text-align: center;
-    }
+  .navbar {
+    text-align: center;
+  }
 
-    nav ul {
-        display: block;
-        width: 100%;
-        height: 90vh;
-        position: absolute;
-        top: 80px;
-        left: -100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-    }
+  nav ul {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
 
-    nav ul li {
-        display: block;
-    }
+  nav ul li {
+    display: block;
+  }
 
-    nav ul.active {
-        background-color: #31b675;
-        left: 0;
-        opacity: 1;
-        transition: 0.5s;
-        z-index: 100;
-    }
+  nav ul.active {
+    background-color: #31b675;
+    left: 0;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 100;
+  }
 
-    nav ul li a {
-        font-weight: 400;
-    }
+  nav ul li a {
+    font-weight: 400;
+  }
 
-    .menu-icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 20px;
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 
-    .fa-times {
-        font-size: 2rem;
-    }
+  .fa-times {
+    font-size: 2rem;
+  }
 }
 
-.container {
-    position: relative;
-
+.maindiv {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
-    height: 70px;
-    padding-top: 5px;
-    margin-top: -20px;
-    margin-left: -7%;
-    width: -50px;
+  display: flex;
+  height: 70px;
+  padding-top: 5px;
+  margin-top: -20px;
+  margin-left: -7%;
+  width: -50px;
 }
 
 /*-------------header-----------*/
 
 header {
-    padding: 40px 0 20px 0;
-    background-color: #fff;
+  padding: 40px 0 20px 0;
+  background-color: #fff;
 }
 
 header .box {
-    margin: 0 0 0 30px;
+  margin: 0 0 0 30px;
 }
 
 header a {
-    font-size: 13px;
-    columns: grey;
+  font-size: 13px;
+  columns: grey;
 }
 
 header i {
-    font-size: 40px;
-    color: #31b675;
-    margin-right: 15px;
+  font-size: 40px;
+  color: #31b675;
+  margin-right: 15px;
 }
 
 header .text {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 header h4 {
-    line-height: 10px
+  line-height: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  header .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    header .contact {
-        justify-content: center;
-        align-items: center;
-    }
+  header .contact {
+    justify-content: center;
+    align-items: center;
+  }
 
-    header a {
-        font-size: 13px;
-    }
+  header a {
+    font-size: 13px;
+  }
 
-    header i {
-        font-size: 30px;
-        margin-right: 5px;
-        margin-top: 10px;
-    }
+  header i {
+    font-size: 30px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
 }
 
 a.navbar-item.active {
-    color: #31b675;
+  color: #31b675;
+}
+.toppage {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  margin-left: 135px;
+}
+.navbar .maindiv .nav-menu {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+.loginarea {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
 }

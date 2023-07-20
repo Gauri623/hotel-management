@@ -1,0 +1,44 @@
+.contentdiv {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+}
+.categorylist .listtype {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+}
+.Blogimg {
+  height: 550px;
+  margin-top: 30px;
+}
+.head {
+  padding: 40px;
+  left: -41px;
+  margin-left: 87px;
+}
+.head h1 {
+  margin-left: 0%;
+}
+.categorylist .h2 {
+  margin-left: 130px;
+}
+.categorylist .horizantalline {
+  color: #31b675;
+}
+.sidecontent {
+  margin-left: 130px;
+  gap: 40px;
+}
+
+.fa-regular {
+  color: #31b675;
+  height: 30px;
+  margin-right: 10px;
+}
+.listtype :hover {
+  color: #31b675;
+  cursor: pointer;
+}

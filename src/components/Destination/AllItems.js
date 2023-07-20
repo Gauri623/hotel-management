@@ -3,6 +3,7 @@ import Dcards from "./Dcard"
 import "../gallery/Gallery.css"
 import "./Destination.css"
 import Sdata from "./Sdata"
+import Footer from "../Footer/Footer"
 
 const AllItem = () => {
     const [items, setIems] = useState(Sdata)
@@ -17,6 +18,7 @@ const AllItem = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

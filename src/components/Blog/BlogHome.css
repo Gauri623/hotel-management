@@ -115,10 +115,10 @@
   flex-direction: row;
 }
 
-.main-content {
+/* .main-content {
   height: 400px;
   width: 700px;
-}
+} */
 .head {
   display: flex;
   position: absolute;
@@ -143,3 +143,17 @@
 }
 
 /*---------blog single page------*/
+
+.side content .category-list h2 {
+  display: flex;
+  flex-direction: column;
+}
+.h2 {
+  display: flex;
+  flex-direction: column;
+}
+.color {
+  background-color: #31b675;
+  border-radius: 3px;
+  padding: 3px;
+}

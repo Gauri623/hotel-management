@@ -9,6 +9,10 @@ import SinglePages from "./SinglePage/SinglePages";
 import Blogs from "./components/Blog/Blog";
 import BlogSingle from "./components/Blog/blog-single-page/BlogSingle"
 import Testimonial from "./components/Testimonial/Testimonial";
+import Contact from "./components/Contact/Contact";
+import Download from './components/HomeSection/Download/Download'
+import Footer from './components/Footer/Footer'
+import Login from './components/login/Login'
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogsingle/:id" element={<BlogSingle />} />
         <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/login" element={<Login />} />
+
 
       </Routes>
     </BrowserRouter>

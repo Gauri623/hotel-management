@@ -30,7 +30,7 @@ const SinglePages = () => {
                         </Link>
 
                         <article className='content flex'>
-                            <div className='main-content'>
+                            <div className='singlePage-main-content'>
                                 {item ? <img src={item.image} alt='' /> : <h2>Not found</h2>}
                                 <h1>What is the {item.title} City? </h1>
                                 <div className='description-wrapper'>

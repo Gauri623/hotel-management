@@ -6,6 +6,7 @@ import Sdata from '../../Destination/Sdata'
 import HeadTitle from "../../common/HeadTitle/HeadTitle";
 import EmptyFile from "../../common/EmptyFile/EmptyFile"
 import BlogData from '../BlogData'
+import "./BlogSingle.css"
 
 function BlogSingle() {
     const { id } = useParams()
@@ -31,36 +32,39 @@ function BlogSingle() {
                         </Link>
 
                         <article className='content flex'>
-                            <div className='main-content'>
-                                <img src={item.cover} alt='' />
-                                <div className='category flex_space'>
-                                    <span>{item.date}</span>
-
+                            <div className='contentdiv'>
+                                <div className='main-content'>
+                                    <img src={item.cover} alt='' className='Blogimg' />
+                                    <div className='category flex_space'>
+                                        <span>{item.date}</span>
+                                    </div>
                                 </div>
+
+                                <div className='sidecontent'>
+                                    <div className='categorylist'>
+                                        <h2>Category</h2>
+                                        <span className='horizantalline'>-------------</span>
+                                        <ul className='listtype'>
+                                            {BlogData.map((item, index) => {
+                                                return (
+                                                    <li key={index}>
+                                                        <i className="fa-regular fa-circle-play"></i>
+                                                        {item.catgeory}
+                                                    </li>
+                                                )
+                                            })
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
                             <div className='head'>
                                 <h1>{item.title}</h1>
+
+                                <p className='parag'>
+                                    {item.desc}</p>
                                 <p>{item.desc}</p>
-                                <p>{item.desc}</p>
-                            </div>
-
-
-                            <div className='side-content'>
-                                <div className='category-list'>
-                                    <h2>Category</h2>
-
-                                    <ul>
-                                        {BlogData.map((item, index) => {
-                                            return (
-                                                <li key={index}>
-                                                    <i className='far-play-circle' ></i>
-                                                    {item.catgeory}
-                                                </li>
-                                            )
-                                        })
-                                        }
-                                    </ul>
-                                </div>
                             </div>
                         </article >
                     </div >

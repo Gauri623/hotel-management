@@ -1,0 +1,95 @@
+.ourapp {
+  background-color: #31b675;
+  color: white;
+  padding: 50px;
+  overflow: hidden;
+}
+.ourapp h1 {
+  font-size: 40px;
+  margin-right: 100%;
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  margin: 0px;
+}
+.ourapp ul {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.ourapp .column ul li {
+  margin: 10px;
+}
+.ourapp .column .btns {
+  margin-right: 20px;
+  gap: 10px;
+}
+
+.ourapp .phone {
+  left: 70%;
+  right: 50%;
+  margin-top: -481px;
+  margin-left: 971px;
+}
+.btns {
+  display: flex;
+  gap: 35px;
+}
+.ourapp {
+  height: 656px;
+}
+
+/*.download {
+  background-color: #31b675;
+  color: white;
+  height: 75vh;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.download .containerdiv .row h1 {
+  font-size: 40px;
+  margin-left: 5px;
+}
+.download ul {
+  margin: 20px 0;
+  display: inline;
+}
+.download ul li {
+  margin: 10px 0;
+}
+.download .row .image {
+  margin-right: 20px;
+}
+.download .row {
+  position: relative;
+  padding: 70px;
+}
+.download .image {
+  position: absolute;
+  right: 0;
+}
+.containerdiv {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .download .containerdiv {
+    flex-direction: column;
+    padding: 40px;
+  }
+  .download .row {
+    width: 100%;
+  }
+  .download .row {
+    display: none;
+  }
+  .download {
+    height: 60vh;
+  }
+}
+.list {
+  display: flex;
+  justify-content: flex-start;
+}
+.app {
+  margin: 10px;
+}*/

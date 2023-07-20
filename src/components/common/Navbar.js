@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <>
             <nav className='navbar'>
-                <div className='container flex_space'>
+                <div className='maindiv'>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas-fa-bars'}></i>
                     </div>
@@ -47,10 +47,10 @@ const Navbar = () => {
                             </li>
                         })}
                     </ul >
-                    <div className='login-area flex'>
+                    <div className='loginarea'>
                         <li>
                             <Link href='/sign-in'>
-                                <i className="input">Sign In</i>
+                                <i className="inputSignIn">Sign In</i>
                             </Link>
                         </li>
                         <li>
@@ -68,7 +68,7 @@ const Navbar = () => {
             </nav >
 
             <header>
-                <div className="container flex_space">
+                <div className="toppage">
                     <div className="logo">
                         <img src="/hotel.png" alt="Hotel Logo" />
                     </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
                     {navigateData.map((item, index) => {
                         const { name, value, icon } = item
                         return <div key={index} className="contact flex_space">
-                            <div className="box flex_space"></div>
+                            <div className="hoteldiv"></div>
                             <div className='icons'>
                                 <i className={icon}></i>
                             </div>
