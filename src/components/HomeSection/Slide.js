@@ -49,6 +49,7 @@ const Slide = ({ slides }) => {
 
 
             <MostPopular />
+
             <div className='destination-wrapper'>
                 <h2>Most Popular Destination</h2>
                 <div className='new'>
@@ -57,7 +58,9 @@ const Slide = ({ slides }) => {
                     <div className='dots'></div>
                 </div>
             </div>
+
             <AllItem />
+
 
 
             <section className='slide-form'>
@@ -83,11 +86,11 @@ const Slide = ({ slides }) => {
                     </form>
                 </div>
             </section>
-
             <Download />
-            <Works />
-            <Gallery />
-            <Footer />
+
+
+
+
 
 
         </>

@@ -5,6 +5,8 @@ import MostPopular from '../HomeSection/popular/MostPopular'
 import Download from '../HomeSection/Download/Download'
 import Works from '../HomeSection/Work/Works'
 import Gallery from '../HomeSection/gallery/gallery'
+import Footer from '../Footer/Footer'
+import Download from './Download/Download'
 
 function HomePage() {
     return (
@@ -14,8 +16,10 @@ function HomePage() {
             <MostPopular />
             <DestinationHome />
             <Download />
+
             <Works />
             <Gallery />
+            <Footer />
         </>
 
 

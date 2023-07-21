@@ -13,6 +13,7 @@ import Contact from "./components/Contact/Contact";
 import Download from './components/HomeSection/Download/Download'
 import Footer from './components/Footer/Footer'
 import Login from './components/login/Login'
+import PosterPage from "./components/poster";
 
 function App() {
   return (
@@ -30,8 +31,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/footer" element={<Footer />} />
         <Route path="/login" element={<Login />} />
-
-
+        <Route path="/poster" element={<PosterPage />} />
       </Routes>
     </BrowserRouter>
   );
